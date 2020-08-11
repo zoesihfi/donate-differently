@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+/* DONATION CSS */
+.donation-home {
+    background: #ffffff;
+    text-align: center;
+    height: 100vmax;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.donation-title {
+    background: red;
+    display: inline-block;
+    margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* CSS for the progress bar */
+.donation-progress {
+    background: #d3455b;
+    height: 7px;
+    border-radius: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.outside-progress {
+    background: lightgray;
+    margin: 0px 10px;
+    border-radius: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+/* No Kid Hungry CSS */
+.nkh {
+    background: #f7f9fa;
+    margin-bottom: 30px;
+    display: inline-block;
+    height: 40vmax;
+    width: 50vmax;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.donation-name {
+    float: left;
+    margin: 10px;
+}
+
+.charity-image {
+    margin: 30px;
+
+}
+
+.charity-dropdown {
+    margin: 15px;
+    width: 45vmax;
+}
+
+.nkd-amount-donated {
+    float: left;
+    font-size: 16px;
+}
+
+.nkd-dropdown-dots {
+    float: right;
+    font-size: 16px;
+}
+
+#nkd-progress {
+    width: 25%;
+}
+
+.charity-logo {
+    width: 45vmax;
+    height: 10em;
+    margin: 10px 0px;
+}
+
+/* Ronald McDonald CSS */
+
+.rmd {
+    background: rgb(241, 241, 241);
+    display: inline-block;
 }
