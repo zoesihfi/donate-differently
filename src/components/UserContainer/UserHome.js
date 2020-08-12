@@ -1,5 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
+import avatar_img from '../Images/avatar_img.png';
+import { Link } from 'react-router-dom';
 
 export default class UserHome extends Component{
     render() {
@@ -9,7 +10,27 @@ export default class UserHome extends Component{
 
                 <div className="user-container">
 
-                    <h1>User Home Feature</h1>
+                    <img src={avatar_img} alt="logo" />
+                    
+                    <hr/>
+
+                    <h5>My Profile</h5>
+
+                    <hr/>
+
+                    <h5>My Donations</h5>
+
+                    <hr/>
+
+                    <h5>Payment</h5>
+
+                    <hr/>
+
+                    <h5>Settings</h5>
+
+                    <br/>
+                    <br/>
+                    <Link to="/user/sample" id="user-home-link"><button>Create A Donation</button></Link>
 
                 </div>
 
