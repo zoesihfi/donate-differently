@@ -1,16 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
-//import components
-import Payment from './components/PaymentContainer/Payment.js';
+//importing user features
+import UserHome from './components/UserContainer/UserHome';
 
-function App() {
-  return (
-    <div className="App">
-      <Payment/>
-    </div>
-  );
+
+export default class App extends Component{
+
+  render() {
+
+    return(
+
+      <Router>
+        <div className="App">
+          <Switch>
+            <Route exact path='/' component={UserHome} />
+          </Switch>
+        </div>
+      </Router>
+
+    );
+
+  }
+
 }
-
-export default App;
